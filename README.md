@@ -1,28 +1,28 @@
 # motor-cortex-pca
 
-[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/jsoldadomagraner/TReND-CaMinA/blob/main/notebooks/Zambia25/16-Wed-DimReduction/dimensionality_reduction_pca.ipynb)
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.github.com/github/jsoldadomagraner/TReND-CaMinA/blob/main/notebooks/Zambia25/16-Wed-DimReduction/dimensionality_reduction_pca.ipynb)
 
 An enterprise-grade, open-source Python pipeline showcasing the processing, mapping, and dimensionality reduction of large-scale, in-vivo multi-neuron population dynamics. This framework leverages **Principal Component Analysis (PCA)** to uncover the lower-dimensional neural manifold where movement preparation algorithms organize complex physiological interactions into distinct behavioral states.
 
 ---
 
 ## 📋 Table of Contents
-1. [Project Overview & Rationale](#-project-overview--rationale)
-2. [Scientific Framework & Dataset Context](#-scientific-framework--dataset-context)
-3. [Mathematical Implementation Steps](#%EF%B8%8F-mathematical-implementation-steps)
-4. [Pipeline Process & Methodology](#-pipeline-process--methodology)
-5. [Key Discovery Milestones & Results](#-key-discovery-milestones--results)
-6. [Challenges & Troubleshooting](#-challenges--troubleshooting)
-7. [Limitations & Scope](#-limitations--scope)
-8. [Quick Start & Installation](#-quick-start--installation)
-9. [Credits & Institutional Origins](#-credits--institutional-origins)
+1. [Project Overview & Rationale](#project-overview--rationale)
+2. [Scientific Framework & Dataset Context](#scientific-framework--dataset-context)
+3. [Mathematical Implementation Steps](#mathematical-implementation-steps)
+4. [Pipeline Process & Methodology](#pipeline-process--methodology)
+5. [Key Discovery Milestones & Results](#key-discovery-milestones--results)
+6. [Challenges & Troubleshooting](#challenges--troubleshooting)
+7. [Limitations & Scope](#limitations--scope)
+8. [Quick Start & Installation](#quick-start--installation)
+9. [Credits & Institutional Origins](#credits--institutional-origins)
 
 ---
 
 ## 🔬 Project Overview & Rationale
 
 ### How the Project Came About & Motivation
-Modern systems neuroscience has transitioned from tracking individual neurons to recording massive neural populations simultaneously. However, analyzing hundreds of interconnected neurons produces highly complex datasets that defy straightforward visualization and analysis. This project was born out of a desire to build a clean, production-ready implementation demonstrating how unsupervised machine learning can extract clear, low-dimensional behavioral trajectories from noisy, high-dimensional biological telemetry.
+Modern systems neuroscience has transitioned from tracking individual neurons to recording massive neural populations simultaneously. However, analyzing hundreds of interconnected neurons produces highly complex datasets that defy straightforward visualization and analysis. This project utilizes the open-source **TReND-CaMinA** datasets to build a clean, production-ready implementation demonstrating how unsupervised machine learning can extract clear, low-dimensional behavioral trajectories from noisy, high-dimensional biological telemetry.
 
 ### What Problem It Solves
 When a subject plans a physical action, hundreds of neurons fire concurrently across an interwoven cortical circuit. Attempting to track or decode this movement planning phase variable-by-variable results in an uninterpretable feature space. This pipeline solves the dimensionality challenge by projecting the population spike patterns onto a lower-dimensional subspace (the "neural manifold") where the underlying neural code becomes geometrically separated, interpretable, and visually identifiable.
@@ -35,7 +35,7 @@ The empirical data evaluates the population dynamics within the **dorsal premoto
 
 * **Dimensionality Matrix ($X \in \mathbb{R}^{N \times D}$):** Consists of 728 distinct trials ($N$) tracking $D = 97$ simultaneously-recorded individual cortical neurons.
 * **Temporal Windowing:** Spikes are integrated over a precise 200 ms tracking frame while the monkey plans a targeted arm reach.
-* **Experimental Parameters:** The task tests 8 unique directional reach angles. The matrix contains exactly 91 trials per reaching orientation, ordered sequentially:
+* **Experimental Parameters:** The task tests 8 unique directional reach angles. The matrix contains exactly 91 trials per reaching orientation from the **TReND-CaMinA** course curriculum, ordered sequentially:
   * **Trials 1 to 91:** Reaching Angle 1
   * **Trials 92 to 182:** Reaching Angle 2
   * *...progressing up to Trial 728 for Reaching Angle 8.*
