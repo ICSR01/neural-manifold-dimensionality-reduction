@@ -126,5 +126,5 @@ Projecting the 728 trials into this 3D PCA coordinate system yields excellent ge
 ### 1. Environment Configuration
 Clone this repository and navigate into the root workspace:
 ```bash
-git clone [https://github.com/yourusername/motor-cortex-pca.git](https://github.com/yourusername/motor-cortex-pca.git)
+git clone [https://github.com/ICSR01/motor-cortex-pca.git](https://github.com/ICSR01/motor-cortex-pca.git)
 cd motor-cortex-pca
